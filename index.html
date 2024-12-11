@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Data ke Firebase</h1>
+        
+        <input type="text" id="inputData" placeholder="Masukkan data">
+        <button onclick="saveData()">Simpan</button>
+        
+        <h2>Data yang Tersimpan</h2>
+        <ul id="dataList"></ul>
+        
+        <h3>Hapus Data</h3>
+        <input type="password" id="passwordInput" placeholder="Masukkan Password">
+        <button onclick="deleteData()">Hapus Semua Data</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
